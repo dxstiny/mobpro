@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="it_courses">
+        <item>SQL Server: Administration</item>
+        <item>JavaScript: Aufbau (DHTML, DOM, AJAX)</item>
+        <item>Sicherheit im Web: Einstieg</item>
+        <item>Java: Einführung</item>
+        <item>TCP/IP in einem Tag</item>
+        <item>Green IT in 8 Stunden</item>
+        <item>Black IT in 2 Minuten</item>
+    </string-array>
+</resources>

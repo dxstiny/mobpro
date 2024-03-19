@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Ui-Demo</string>
+    <string name="linear_layout">Linear Layout</string>
+    <string name="constraint_layout">Constraint Layout</string>
+
+    <string name="welcome_header">Welcome to the 2nd MobPro exercise</string>
+    <string name="welcome_section_1_title"><![CDATA[1. Layouts: Linear & Constraint]]></string>
+    <string name="welcome_section_2_header">2. Events with RatingBar</string>
+    <string name="welcome_section_3_header">3. Spinner</string>
+    <string name="welcome_section_4_header">4. Dialog</string>
+    <string name="it_courses">Chose a course</string>
+    <string name="welcome_section_4_button">Show me the options</string>
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent neque dolor, laoreet sit amet nibh id, tristique vulputate eros. Aliquam euismod enim non felis tempus rutrum. Curabitur sodales varius ultrices. Praesent placerat, tortor sed faucibus lacinia, nibh lacus vulputate purus, a tincidunt tellus nibh a ligula. Donec pellentesque risus et interdum dictum. Morbi varius odio sed dui luctus, sit amet sagittis magna consectetur. Sed lacinia, odio a pretium tincidunt, nunc tellus maximus lectus, accumsan vestibulum leo velit vitae ligula. Pellentesque sollicitudin bibendum lorem et iaculis. Donec cursus velit leo, ut iaculis ante elementum non. Maecenas iaculis leo interdum, efficitur nibh vel, feugiat dui.
+
+        Nullam condimentum semper magna, eu scelerisque libero facilisis non. Vestibulum consectetur nisi sed est bibendum pulvinar. Morbi ac dui a purus laoreet semper. Duis sodales rhoncus metus, vitae mattis neque mollis quis. Praesent nec dui a mauris tempor fringilla. Nulla vitae velit convallis, lobortis diam vitae, aliquet nunc. Nulla iaculis ullamcorper nulla, nec ultricies ante vestibulum at. Morbi mollis turpis et lectus sagittis, ac interdum massa congue. Aliquam orci sapien, laoreet ut maximus mollis, volutpat eu tellus. Morbi faucibus, felis non porta volutpat, sapien odio semper est, id iaculis ex purus elementum est. Etiam pretium semper dolor eu scelerisque. Fusce odio dolor, bibendum vel sollicitudin at, venenatis quis velit. Curabitur vel magna gravida, dapibus orci a, placerat nulla. Nullam at euismod diam.
+
+        Nulla pulvinar finibus enim a tristique. Proin ut enim dolor. Praesent scelerisque dui eleifend facilisis placerat. Etiam vel ipsum sit amet diam bibendum semper nec quis orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus sodales eu massa at congue. Nunc sodales nec ipsum et dignissim. Nullam blandit leo mi, eu laoreet orci pellentesque ut. Donec vestibulum condimentum nisi sed tristique. Integer vel aliquet augue. Integer malesuada ullamcorper mauris feugiat ullamcorper. Donec pharetra arcu nec velit molestie, ac egestas lorem fringilla. Pellentesque a porttitor leo. Donec interdum felis a ligula finibus, fermentum venenatis nunc auctor.
+
+        Praesent eget elementum dolor, ac gravida urna. Curabitur semper purus dignissim ligula interdum, at efficitur felis interdum. Phasellus id metus ultricies, pretium enim a, auctor odio. Donec egestas, elit sit amet viverra consequat, tortor nunc viverra leo, laoreet maximus odio leo vel elit. Nam pellentesque augue sit amet urna blandit, quis tempus tortor vulputate. Donec sit amet augue non purus aliquam imperdiet. Nam nec sodales turpis. Donec luctus velit id dolor fringilla blandit. Vestibulum bibendum sodales purus. Donec vitae sem eros. Fusce elementum gravida orci, at iaculis nisi. Etiam pharetra, ipsum vel fringilla vehicula, augue diam accumsan tortor, eu fermentum purus massa sed ipsum.
+
+        Proin augue odio, condimentum sit amet vulputate id, gravida pulvinar diam. Suspendisse id justo in nisi rutrum aliquam. Donec blandit rutrum elit sit amet dapibus. Ut volutpat at nulla nec sollicitudin. Fusce faucibus nunc nec nunc tincidunt, eu pellentesque velit scelerisque. Nam nunc nibh, suscipit rhoncus mi sit amet, varius suscipit ipsum. Donec eget rutrum risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque non augue auctor, pharetra ex non, porta mi. Aliquam varius lacus et ante imperdiet posuere vitae id elit. Sed fermentum in tortor ultricies ultrices. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer volutpat congue feugiat.
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="constraint_header">Example Constraint Layout</string>
+    <string name="product_id">Product ID</string>
+    <string name="quantity">Quantity</string>
+    <string name="special_rate">Special Rate</string>
+    <string name="disclaimer">An (almost) hidden disclaimer!</string>
+    <string name="btn_inc_fragment">Fragment++</string>
+    <string name="btn_inc_viewModel">ViewModel++</string>
+    <string name="linearLayout_horizontal">I\'m a horizontal LinearLayout</string>
+    <string name="linearLayout_vertical">I\'m a vertical LinearLayout</string>
+    <string name="everything">Everything</string>
+    <string name="something">Something</string>
+    <string name="nothing">Nothing</string>
+    <string name="what_do_you_want">What do you want?</string>
+    <string name="dont_know">Don\'t know</string>
+    <string name="you_chose">You chose %1$s.</string>
+    <string name="aha_you_chose">Aha, you chose %1$s!</string>
+</resources>

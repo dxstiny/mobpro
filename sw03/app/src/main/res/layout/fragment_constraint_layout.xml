@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_constraint_layout"
+    tools:context=".ConstraintLayoutFragment"
+    android:padding="0dp">
+
+    <TextView
+        android:id="@+id/constraintHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/constraint_margin"
+        android:layout_marginTop="@dimen/constraint_margin"
+        android:textSize="@dimen/text_size_large"
+        android:text="@string/constraint_header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/productId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/constraint_margin"
+        android:layout_marginTop="@dimen/constraint_margin"
+        android:ems="10"
+        android:hint="@string/product_id"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintHeader" />
+
+    <EditText
+        android:id="@+id/quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/constraint_margin"
+        android:layout_marginTop="@dimen/constraint_margin"
+        android:ems="10"
+        android:hint="@string/quantity"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/productId" />
+
+    <CheckBox
+        android:id="@+id/specialRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/constraint_margin"
+        android:layout_marginTop="@dimen/constraint_margin"
+        android:text="@string/special_rate"
+        app:layout_constraintStart_toEndOf="@id/productId"
+        app:layout_constraintTop_toBottomOf="@id/constraintHeader" />
+
+    <Button
+        android:id="@+id/btn_inc_viewModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/constraint_margin"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="@dimen/constraint_margin"
+        android:text="ViewModel: 0++"
+        app:layout_constraintEnd_toStartOf="@id/btn_inc_fragment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/quantity" />
+
+    <Button
+        android:id="@+id/btn_inc_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/constraint_margin"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="@dimen/constraint_margin"
+        android:text="Fragment: 0++"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_inc_viewModel"
+        app:layout_constraintTop_toBottomOf="@id/quantity" />
+
+    <TextView
+        android:id="@+id/disclaimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/constraint_margin"
+        android:layout_marginBottom="@dimen/constraint_margin"
+        android:text="@string/disclaimer"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/mutedText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

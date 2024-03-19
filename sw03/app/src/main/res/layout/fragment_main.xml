@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding"
+        android:showDividers="middle"
+        android:divider="@drawable/empty_tall_divider"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding"
+            android:text="@string/welcome_header"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/design_default_color_primary"
+            android:padding="@dimen/padding"
+            android:text="@string/welcome_section_1_title"
+            android:textColor="@color/design_default_color_on_primary"
+            android:textSize="@dimen/text_size" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/layoutLinearSelected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding"
+                android:text="@string/linear_layout" />
+
+            <RadioButton
+                android:id="@+id/layoutConstraintSelected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding"
+                android:text="@string/constraint_layout" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/design_default_color_primary"
+            android:padding="@dimen/padding"
+            android:text="@string/welcome_section_2_header"
+            android:textColor="@color/design_default_color_on_primary"
+            android:textSize="@dimen/text_size" />
+
+        <RatingBar
+            android:id="@+id/main_ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding"
+            android:text=""
+            android:textColor="@color/mutedText"
+            android:textSize="@dimen/text_size_small"
+            android:id="@+id/main_ratingBar_text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/design_default_color_primary"
+            android:padding="@dimen/padding"
+            android:text="@string/welcome_section_3_header"
+            android:textColor="@color/design_default_color_on_primary"
+            android:textSize="@dimen/text_size" />
+
+        <Spinner
+            android:id="@+id/main_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/it_courses"
+            android:prompt="@string/it_courses" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/design_default_color_primary"
+            android:padding="@dimen/padding"
+            android:text="@string/welcome_section_4_header"
+            android:textColor="@color/design_default_color_on_primary"
+            android:textSize="@dimen/text_size" />
+
+        <Button
+            android:id="@+id/main_button_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_section_4_button" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding"
+            android:textSize="@dimen/text_size_small"
+            android:text="@string/lorem_ipsum" />
+
+    </LinearLayout>
+</ScrollView>
