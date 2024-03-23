@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Kommunikation &amp; Nebenläufigkeit</string>
+
+    <string name="bands_header"><![CDATA[Kommunikation (HTTP & JSON)]]></string>
+    <string name="bands_startServer">Server-Anfrage starten</string>
+    <string name="bands_resetViewModel">View-Model zurücksetzen</string>
+    <string name="bands_showBandSelection">Zeige Band-Auswahl</string>
+</resources>
