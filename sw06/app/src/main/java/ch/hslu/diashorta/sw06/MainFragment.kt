@@ -15,9 +15,12 @@ import androidx.appcompat.app.AlertDialog
 import androidx.core.content.ContextCompat
 import androidx.core.content.ContextCompat.RECEIVER_NOT_EXPORTED
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.lifecycleScope
+import androidx.work.WorkInfo
 import ch.hslu.diashorta.sw06.databinding.FragmentMainBinding
 import ch.hslu.diashorta.sw06.musicPlayer.MusicPlayerConnection
 import ch.hslu.diashorta.sw06.musicPlayer.MusicPlayerService
+import kotlinx.coroutines.launch
 
 
 class MainFragment : Fragment() {
@@ -112,6 +115,29 @@ class MainFragment : Fragment() {
             val localBroadcast = Intent(INTENT_FILTER)
             localBroadcast.setPackage(PACKAGE_NAME)
             requireActivity().sendBroadcast(localBroadcast)
+        }
+        binding.btnStartWorkManager.setOnClickListener {
+            val workManager = androidx.work.WorkManager.getInstance(requireContext())
+            val workRequest = androidx.work.OneTimeWorkRequestBuilder<LocaliseMissilesWorker>()
+                .build()
+            workManager.enqueue(workRequest)
+
+            val workInfoData = workManager.getWorkInfoByIdFlow(workRequest.id)
+            lifecycleScope.launch {
+                workInfoData.collect {
+                    if (it.state == WorkInfo.State.SUCCEEDED) {
+                        val positions = it.outputData.getStringArray("missilePositions")
+                        positions?.let {
+                            AlertDialog.Builder(requireContext())
+                                .setTitle("Missile positions")
+                                .setMessage(it.joinToString("\n"))
+                                .setNeutralButton("Close", null)
+                                .create()
+                                .show()
+                        }
+                    }
+                }
+            }
         }
     }
 

@@ -117,5 +117,19 @@
             android:id="@+id/btnBroadcast"
             android:text="BroadcastReceiver verschicken" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WorkManager: Async Feedback"
+            android:background="@color/design_default_color_primary"
+            android:textColor="@color/design_default_color_background"
+            android:padding="@dimen/padding" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnStartWorkManager"
+            android:text="BroadcastReceiver verschicken" />
+
     </LinearLayout>
 </ScrollView>
