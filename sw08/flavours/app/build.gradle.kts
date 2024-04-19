@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "ch.hslu.diashorta.buildtypes"
+    namespace = "ch.hslu.diashorta.flavours"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "ch.hslu.diashorta.buildtypes"
+        applicationId = "ch.hslu.diashorta.flavours"
         minSdk = 34
         targetSdk = 34
         versionCode = 1
@@ -24,16 +24,21 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            signingConfig = signingConfigs.getByName("debug")
-        }
-        debug {
-            applicationIdSuffix = ".debug"
-            versionNameSuffix = "-DEBUG"
-            isDebuggable = true
         }
     }
 
+    flavorDimensions += "dim"
+    productFlavors {
+        create("light") {
+            applicationIdSuffix = ".light"
+            versionNameSuffix = "-light"
+        }
 
+        create("water") {
+            applicationIdSuffix = ".water"
+            versionNameSuffix = "-water"
+        }
+    }
 
     buildFeatures {
         buildConfig = true
